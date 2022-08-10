@@ -90,8 +90,8 @@
 			<h2> {{title}} -- {{age}}</h2>
 		</div>
 		
-	if與show的差別是 if會將整個dom刪除 而show只是將style 改為不顯示
 ```
+if與show的差別是 if會將整個dom刪除 而show只是將style 改為不顯示
 
 ### VUE 第3集
 
