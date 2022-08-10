@@ -23,29 +23,30 @@
 在<head>進行vue cdn的設置<script src="https://unpkg.com/vue@3"></script>
 ```
 
-	在資料夾底下添加app.js
+在資料夾底下添加app.js
 
 ```html
 在index.html <body>添加 <script src="app.js"></script>讓html可以偵測到app.js
 ```
 
+```js
+const app = Vue.creatApp()創建app
+app.mount('#app')將app掛載到dom 讓他運作
 ```
-	const app = Vue.creatApp()創建app
-	app.mount('#app')將app掛載到dom 讓他運作
+
+```html
+在<body>內div#app + tab 創建<div id="app"></div>讓元素可以訪問運作
+可在內部creatApp({})內添加各種html <div><div> 	或是直接在<div id="app"><div><div><div>添加狀態
+```
+
+在Vue.createApp當中添加data(){return{ 變數:數字 || 字串 || 布林值}}
+
+```html
+html可對data當中的變數讀取<div id="app"><h2> {{變數}}</h2></div>
 ```
 
 ```
-	div#app + tab 創建<div id="app"></div>讓元素可以訪問運作
-	可在內部creatApp({})內添加各種html <div><div> 	或是直接在<div id="app"><div><div><div>添加狀態
-```
-
-```
-	在Vue.createApp當中添加data(){return{ 變數:數字 || 字串 || 布林值}}
-	html可對data當中的變數讀取<div id="app"><h2> {{變數}}</h2></div>
-```
-
-```
-	<button @click="變數++">增加變數1</button>
+<button @click="變數++">增加變數1</button>
 ```
 
 ```
