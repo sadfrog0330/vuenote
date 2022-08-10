@@ -13,7 +13,7 @@ vue https://youtu.be/YrxBCBibVo0 1~6 ->
 
 ### VUE 第1集 
 
-```
+```html
 	添加index.html 	利用doc + tab 創建基礎樣式 在<body>部分更改顯示文字
 ```
 
@@ -48,7 +48,7 @@ vue https://youtu.be/YrxBCBibVo0 1~6 ->
 
 ```
 	methods:{
-		changeTitle(abc){
+	  changeTitle(abc){
 			console.log(“觸發”)
 			this.title = “巴拉巴拉”
 	
