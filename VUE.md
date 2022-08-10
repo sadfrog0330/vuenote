@@ -1,4 +1,5 @@
 ####
+
 事先準備 雙字幕 幫助之後看VUE https://chrome.google.com/webstore/detail/youtube-dual-subtitles/hkbdddpiemdeibjoknnofflfgbgnebcm
 每一項一定都要全部跟著做一次 影片內的東西 能理解很好 不能也沒事 盡力去想
 html https://youtu.be/CLUPkcLQm64 ->
@@ -8,13 +9,23 @@ vue https://youtu.be/YrxBCBibVo0 1~6 ->
 都完成後請至櫃台找mike大哥領取任務 邊寫邊問問題 不懂的可以問我 我算比較閒的
 可不可以給我換黑底 很傷眼睛 可不可以給我換黑底 很傷眼睛 可不可以給我換黑底 很傷眼睛 很傷眼睛  很傷眼睛很傷眼睛很傷眼睛很傷眼睛很傷眼睛很傷眼睛很傷眼睛
 VUE 第1集 
-   	 添加index.html 	利用doc + tab 創建基礎樣式 在<body>部分更改顯示文字
+   	添加index.html 	利用doc + tab 創建基礎樣式 在<body>部分更改顯示文字
+
 ####
+
+```
+	
 VUE 第2.3集(未完成)
      	在<head>進行vue cdn的設置<script src="https://unpkg.com/vue@3"></script>
+	
+```
 
+*** 
+	
 在資料夾底下添加app.js 並在index.html <body>添加 
 <script src="app.js"></script>讓html可以偵測到app.js
+	
+***
 
 	const app = Vue.creatApp()創建app
 	app.mount('#app')將app掛載到dom 讓他運作
