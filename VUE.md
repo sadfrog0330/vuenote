@@ -14,13 +14,13 @@ vue https://youtu.be/YrxBCBibVo0 1~6 ->
 ### VUE 第1集 
 
 ```html
-	添加index.html 	利用doc + tab 創建基礎樣式 在<body>部分更改顯示文字
+添加index.html 	利用doc + tab 創建基礎樣式 在<body>部分更改顯示文字
 ```
 
 ### VUE 第2集
 
-```
-	在<head>進行vue cdn的設置<script src="https://unpkg.com/vue@3"></script>
+```html
+在<head>進行vue cdn的設置<script src="https://unpkg.com/vue@3"></script>
 ```
 
 ```
@@ -66,27 +66,27 @@ vue https://youtu.be/YrxBCBibVo0 1~6 ->
         </button>
 ```
 
+toggleShowBooks()方法利用button觸發後會將showBooks變更 如果true 則 = false如果為false則 = true
 ```
-	toggleShowBooks()方法利用button觸發後會將showBooks變更 如果true 則 = false如果為false則 = true
 	
-		toggleShowBooks(){
-			this.showBooks = !this.showBooks
-		},
+toggleShowBooks(){
+	this.showBooks = !this.showBooks
+},
 
-		return {
-			title:'123321',
-			age:2,
-			showBooks:true,
-		 }
-				 
-	如果showBooks = true 就會顯示
-	
-		<div v-show="showBooks">
-			<h2> {{title}} -- {{age}}</h2>
-		</div>
-		<div v-if="showBooks">
-			<h2> {{title}} -- {{age}}</h2>
-		</div>
+return {
+	title:'123321',
+	age:2,
+	showBooks:true,
+	}
+			
+如果showBooks = true 就會顯示
+
+<div v-show="showBooks">
+	<h2> {{title}} -- {{age}}</h2>
+</div>
+<div v-if="showBooks">
+	<h2> {{title}} -- {{age}}</h2>
+</div>
 		
 ```
 if與show的差別是 if會將整個dom刪除 而show只是將style 改為不顯示
