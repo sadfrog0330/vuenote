@@ -45,11 +45,11 @@ app.mount('#app')將app掛載到dom 讓他運作
 html可對data當中的變數讀取<div id="app"><h2> {{變數}}</h2></div>
 ```
 
-```
+```html
 <button @click="變數++">增加變數1</button>
 ```
 
-```
+```js
 methods:{
   changeTitle(abc){
     console.log(“觸發”)
@@ -60,21 +60,25 @@ methods:{
 
   }
 }
-<button @click="changeTitle("顯示abc")>觸發changeTitle</button>
 ```
 
+```html
+<button @click="changeTitle('顯示abc')>觸發changeTitle</button>
 ```
-	html 進行show的切換 運行toggleShowBooks()方法
-				<button @click="toggleShowBooks">
-            <span>切換showBooks的true或false</span>
-        </button>
+
+html 進行show的切換 運行toggleShowBooks()方法
+
+```html
+<button @click="toggleShowBooks">
+  <span>切換showBooks的true或false</span>
+</button>
 ```
 
 toggleShowBooks()方法利用button觸發後會將showBooks變更 如果true 則 = false如果為false則 = true
-```
-	
+
+```js
 toggleShowBooks(){
-	this.showBooks = !this.showBooks
+  this.showBooks = !this.showBooks
 },
 
 return {
@@ -82,36 +86,39 @@ return {
 	age:2,
 	showBooks:true,
 	}
-			
+```
+
 如果showBooks = true 就會顯示
 
+```html
 <div v-show="showBooks">
-	<h2> {{title}} -- {{age}}</h2>
+  <h2> {{title}} -- {{age}}</h2>
 </div>
 <div v-if="showBooks">
-	<h2> {{title}} -- {{age}}</h2>
+  <h2> {{title}} -- {{age}}</h2>
 </div>
 		
 ```
+
 if與show的差別是 if會將整個dom刪除 而show只是將style 改為不顯示
 
 ### VUE 第3集
 
 ```html
-		<div class="box"></div>
-	class="box" 抓取<style>名稱為.box
+  <div class="box"></div>
+class="box" 抓取<style>名稱為.box
 ```
 
 ```css
 	<style>
-	.box {
-		 padding: 100px 0; /*在box外面添加100px的寬度*/
-		 width: 400px; /*box本身寬度*/
-		 text-align: center; /*文字置中*/
-		 background: #ddd; /*box背景顏色*/
-		 margin: 20px; /*box邊框*/
-		 display: inline-block; /*內邊框*/
-	 }
+.box {
+  padding: 100px 0; /*在box外面添加100px的寬度*/
+  width: 400px; /*box本身寬度*/
+  text-align: center; /*文字置中*/
+  background: #ddd; /*box背景顏色*/
+  margin: 20px; /*box邊框*/
+  display: inline-block; /*內邊框*/
+}
 	</style>
 ```
 
@@ -139,15 +146,15 @@ if與show的差別是 if會將整個dom刪除 而show只是將style 改為不顯
 
 ```js
 data(){
- return {
-  x:0,
-  y:0,
- }
+  return {
+    x:0,
+    y:0,
+  }
 },
 methods:{
   HandleMousemove(e){
-   this.x = e.offsetX //data設定的x = e的offsetX
-   this.y = e.offsetY //data設定的y = e的offsetX
+    this.x = e.offsetX //data設定的x = e的offsetX
+    this.y = e.offsetY //data設定的y = e的offsetX
   },
 },
 ```
