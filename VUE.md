@@ -105,7 +105,7 @@ if與show的差別是 if會將整個dom刪除 而show只是將style 改為不顯
 ### VUE 第3集
 
 ```html
-  <div class="box"></div>
+<div class="box"></div>
 class="box" 抓取<style>名稱為.box
 ```
 
