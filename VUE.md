@@ -159,6 +159,33 @@ methods:{
 },
 ```
 
+循環輸出數組
+
+```js
+books:[ /*{}內的東西為物件 可自由創建{變數:數字 || 字串 || 布林值}*/
+  {title:'1',author:'哈'}, /*數組[0]*/
+  {title:'2',author:'哈哈'}, /*數組[1]*/
+  {title:'3',author:'哈哈哈'}, /*數組[2]*/
+]
+```
+
+```html
+<li v-for="book in books"> <!-- books將命名為book book 可隨意更改 -->
+  <h3>{{book.title}}</h3> <!-- 循環例遍books名為title的[0] 第一個數組 到最後一個 -->
+  <p>{{book.author}}</p>	<!-- 循環例遍books名為author的[0] 第一個數組 到最後一個 -->
+</li>
+```
+
+輸入網址
+
+```html
+<a :href="url"></a>
+```
+
+```js
+url:'網址',
+```
+
 
 
 
