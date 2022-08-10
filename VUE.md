@@ -103,17 +103,34 @@
 ```
 	<style>
 	.box {
-		padding: 100px 0; /*在box外面添加100px的寬度*/
-		width: 400px; /*box本身寬度*/
-		text-align: center; /*文字置中*/
-		background: #ddd; /*box背景顏色*/
-		margin: 20px; /*box邊框*/
-		display: inline-block; /*內邊框*/
-	}
+		 padding: 100px 0; /*在box外面添加100px的寬度*/
+		 width: 400px; /*box本身寬度*/
+		 text-align: center; /*文字置中*/
+		 background: #ddd; /*box背景顏色*/
+		 margin: 20px; /*box邊框*/
+		 display: inline-block; /*內邊框*/
+	 }
 	</style>
 ```
 
+```
+	<div class="box" @mouseover="handleEvant">鼠標進入</div>
+		<div class="box" @mouseleave="handleEvant">鼠標離開</div>
+		<div class="box" @dblclick="handleEvant">鼠標雙擊</div>
+		<div class="box"></div>
+	handleEvant(e){
+		主控台.log（e，e.type）e與e的類型
+	},
+```
 
+
+```
+獲取e的x.y存到data
+	HandleMousemove(e){
+		this.x = e.offsetX //data設定的x = e的offsetX
+		this.y = e.offsetY //data設定的y = e的offsetX
+		},
+```
 
 
 
