@@ -207,7 +207,24 @@ books:[
 ]
 ```
 
+計算屬性
+
+```html
+<li v-for="book in filteredBooks" class="{ fav: book.isFav}">
+```
+
+```js
+computed:{
+  filteredBooks(){
+    return this.books.filter((book) => book.isFav) /*如果books.isFav = false則 不會渲染*/
+  }
+}
+```
+
 ### 第4集
+
+下載note.js 
+打開cmd 輸入 node -v 查看是否有正確安裝
 
 
 
