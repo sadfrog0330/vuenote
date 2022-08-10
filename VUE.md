@@ -3,7 +3,8 @@
 雙字幕 幫助之後看VUE https://chrome.google.com/webstore/detail/youtube-dual-subtitles/hkbdddpiemdeibjoknnofflfgbgnebcm
 
 每一項一定都要全部跟著做一次 影片內的東西 能理解很好 不能也沒事 盡力去想
-觀看順序 建議可以邊看邊做筆記 對之後也會很有幫助 尤其VUE
+建議可以邊看邊做筆記 對之後也會很有幫助 尤其VUE
+觀看順序
 #### html：[https://youtu.be/CLUPkcLQm64](https://youtu.be/CLUPkcLQm64)
 #### css：[https://youtu.be/Ml78vnNTBLw](https://youtu.be/Ml78vnNTBLw)
 #### js：[https://youtu.be/yZwlW5INhgk](https://youtu.be/yZwlW5INhgk)
@@ -290,7 +291,13 @@ components: { 資料夾名稱 },
 
 ## VUE 第5集
 
+讓css設定只在這個檔案渲染
 
+```css
+<style scoped>
+
+</style>
+```
 
 
 
