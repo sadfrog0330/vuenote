@@ -119,20 +119,23 @@
 	<div class="box" @dblclick="handleEvant">鼠標雙擊</div>
 	<div class="box"></div>
 ```
+
 ```js
 	handleEvant(e,data){
-			console.log(e,e.type) //e與e的類型
-			if(data){ //如果data有東西
-				console.log(data) 
-			}
-		},
+		console.log(e,e.type) //e與e的類型
+		if(data){ //如果data有東西
+			console.log(data) 
+		}
+	},
 ```
 
 
-```
+```html
 	<div class="box" @mousemove="HandleMousemove">x.y位子{{x}}-{{y}}</div>
 ```	
+
 獲取e的x.y存到data
+
 ```javascript
 	data(){
 		return {
