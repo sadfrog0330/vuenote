@@ -1,17 +1,15 @@
 ### 事前準備與資源
 
-```
-	雙字幕 幫助之後看VUE https://chrome.google.com/webstore/detail/youtube-dual-subtitles/hkbdddpiemdeibjoknnofflfgbgnebcm
+雙字幕 幫助之後看VUE https://chrome.google.com/webstore/detail/youtube-dual-subtitles/hkbdddpiemdeibjoknnofflfgbgnebcm
 
-	每一項一定都要全部跟著做一次 影片內的東西 能理解很好 不能也沒事 盡力去想
-	觀看順序 建議可以邊看邊做筆記 對之後也會很有幫助 尤其VUE
-	html https://youtu.be/CLUPkcLQm64 ->
-	css https://youtu.be/Ml78vnNTBLw ->
-	js https://youtu.be/yZwlW5INhgk ->
-	vue https://youtu.be/YrxBCBibVo0 1~6 ->
+每一項一定都要全部跟著做一次 影片內的東西 能理解很好 不能也沒事 盡力去想
+觀看順序 建議可以邊看邊做筆記 對之後也會很有幫助 尤其VUE
+html https://youtu.be/CLUPkcLQm64 ->
+css https://youtu.be/Ml78vnNTBLw ->
+js https://youtu.be/yZwlW5INhgk ->
+vue https://youtu.be/YrxBCBibVo0 1~6 ->
 
-	都完成後請至屁眼蜜櫃台找mike大哥領取任務 邊寫邊問問題 不懂的可以問我 我算比較閒的
-```
+都完成後請至屁眼蜜櫃台找mike大哥領取任務 邊寫邊問問題 不懂的可以問我 我算比較閒的
 
 ### VUE 第1集 
 
