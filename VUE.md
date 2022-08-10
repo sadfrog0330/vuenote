@@ -224,9 +224,17 @@ computed:{
 ### 第4集
 
 下載note.js 
+
 打開cmd 輸入 node -v 查看是否有正確安裝
 
+輸入 npm install -g @vue/cli  安裝vue cli
+              <-g全域安裝>
 
+cd 資料夾名稱 //進入資料夾
+
+cd空格.. //返回上個資料夾 
+
+vue create 要創建資料夾的名稱 //創建VUE
 
 
 
