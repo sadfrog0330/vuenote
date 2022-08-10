@@ -82,10 +82,10 @@ toggleShowBooks(){
 },
 
 return {
-	title:'123321',
-	age:2,
-	showBooks:true,
-	}
+  title:'123321',
+  age:2,
+  showBooks:true,
+}
 ```
 
 如果showBooks = true 就會顯示
