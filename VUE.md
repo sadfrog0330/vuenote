@@ -192,6 +192,21 @@ url:'網址',
 img:'assets/1.jpg' /*資料夾位子 assets -> 1.jpg*/
 ```
 
+css渲染判定
+
+```html
+<li v-for="book in books" class="{ fav: book.isFav}"> <!-- books將命名為book book 可隨意更改 -->
+    <!-- 數列的isFav如果 = true  css .fav 會渲染 = false則不會-->
+```
+
+```js
+books:[
+  {title:'1',author:'哈',img:'assets/1.jpg',isFav:true},
+  {title:'2',author:'哈哈',img:'assets/2.jpg',isFav:true},
+  {title:'3',author:'哈哈哈',img:'assets/3.jpg',isFav:true},
+]
+
+```
 
 
 
