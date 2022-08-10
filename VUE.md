@@ -113,9 +113,9 @@ if與show的差別是 if會將整個dom刪除 而show只是將style 改為不顯
 
 ```html
 <div class="box" @mouseover="handleEvant($event,5)">鼠標進入</div>
-	<div class="box" @mouseleave="handleEvant">鼠標離開</div>
-	<div class="box" @dblclick="handleEvant">鼠標雙擊</div>
-	<div class="box"></div>
+<div class="box" @mouseleave="handleEvant">鼠標離開</div>
+<div class="box" @dblclick="handleEvant">鼠標雙擊</div>
+<div class="box"></div>
 ```
 
 ```js
@@ -134,18 +134,18 @@ if與show的差別是 if會將整個dom刪除 而show只是將style 改為不顯
 獲取e的x.y存到data
 
 ```js
-	data(){
-		return {
-			x:0,
-			y:0,
-		}
-	},
-	methods:{
-		HandleMousemove(e){
-			this.x = e.offsetX //data設定的x = e的offsetX
-			this.y = e.offsetY //data設定的y = e的offsetX
-		},
-	},
+data(){
+ return {
+  x:0,
+  y:0,
+ }
+},
+methods:{
+  HandleMousemove(e){
+   this.x = e.offsetX //data設定的x = e的offsetX
+   this.y = e.offsetY //data設定的y = e的offsetX
+  },
+},
 ```
 
 
