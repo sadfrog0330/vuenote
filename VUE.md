@@ -49,7 +49,7 @@ html可對data當中的變數讀取<div id="app"><h2> {{變數}}</h2></div>
 <button @click="變數++">增加變數1</button>
 ```
 
-```js
+```vue
 methods:{
   changeTitle(abc){
     console.log(“觸發”)
