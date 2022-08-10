@@ -1,4 +1,4 @@
-### 事前準備與資源
+## 事前準備與資源
 
 雙字幕 幫助之後看VUE https://chrome.google.com/webstore/detail/youtube-dual-subtitles/hkbdddpiemdeibjoknnofflfgbgnebcm
 
@@ -11,13 +11,13 @@
 
 都完成後請至屁眼蜜櫃台找mike大哥領取任務 邊寫邊問問題 不懂的可以問我 我算比較閒的
 
-### VUE 第1集 
+## VUE 第1集 
 
 ```html
 添加index.html 	利用doc + tab 創建基礎樣式 在<body>部分更改顯示文字
 ```
 
-### VUE 第2集
+## VUE 第2集
 
 ```html
 在<head>進行vue cdn的設置<script src="https://unpkg.com/vue@3"></script>
@@ -102,7 +102,8 @@ return {
 
 if與show的差別是 if會將整個dom刪除 而show只是將style 改為不顯示
 
-### VUE 第3集
+
+## VUE 第3集
 
 ```html
 <div class="box"></div>
@@ -221,7 +222,7 @@ computed:{
 }
 ```
 
-### 第4集
+## VUE 第4集
 
 下載note.js 
 打開cmd 輸入 node -v 查看是否有正確安裝
@@ -259,7 +260,7 @@ createApp(App).mount('#app')  創建App
   },
 ```
 
-向div添加class
+向div添加class 按下按鈕後 input 增加class 'active'
 
 ```html
 <input type="text" ref="name">
@@ -275,7 +276,19 @@ methods:{
 },
 ```
 
+新增 資料夾名稱.vue 到components
 
+```html
+<資料夾名稱 />
+```
+
+```js
+import 資料夾名稱 from './components/資料夾名稱.vue' /*存放資料夾的位子*/
+
+components: { 資料夾名稱 },
+```
+
+## VUE 第5集
 
 
 
