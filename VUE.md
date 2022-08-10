@@ -49,15 +49,15 @@
 ```
 
 ```
-	methods:{
-        changeTitle(abc){
-	        console.log(“觸發”)
-	        this.title = “巴拉巴拉”
-	
-            如果要將()將內的abc帶入
-            this.title = abc 那麼title會=changeTitle()內的東西也就是"顯示abc"
-        }
+methods:{
+    changeTitle(abc){
+        console.log(“觸發”)
+        this.title = “巴拉巴拉”
+
+        如果要將()將內的abc帶入
+        this.title = abc 那麼title會=changeTitle()內的東西也就是"顯示abc"
     }
+}
 <button @click="changeTitle("顯示abc")>觸發changeTitle</button>
 ```
 
