@@ -114,10 +114,12 @@
 ```
 
 ```
-	<div class="box" @mouseover="handleEvant($event,5)">鼠標進入</div>
-		<div class="box" @mouseleave="handleEvant">鼠標離開</div>
-		<div class="box" @dblclick="handleEvant">鼠標雙擊</div>
-		<div class="box"></div>
+<div class="box" @mouseover="handleEvant($event,5)">鼠標進入</div>
+	<div class="box" @mouseleave="handleEvant">鼠標離開</div>
+	<div class="box" @dblclick="handleEvant">鼠標雙擊</div>
+	<div class="box"></div>
+```
+```js
 	handleEvant(e,data){
 			console.log(e,e.type) //e與e的類型
 			if(data){ //如果data有東西
