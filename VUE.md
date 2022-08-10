@@ -236,7 +236,44 @@ vue create 新資料夾名稱 ->在當前位子 創建一個新資料夾
 
 code . ->利用vscode 打開資料夾
 
+```html
+index.html
+<div id="app"></div> 渲染app
+```
 
+main.js 很重要
+
+```js
+import { createApp } from 'vue' 導入createApp 從vue
+import App from './App.vue' 導入App 從路徑./App.vue
+
+createApp(App).mount('#app')  創建App
+```
+
+確保 npm run serve 與 npm run bulid 兩個都要正常運作 如果有error 那就是不行
+
+```json
+"scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
+  },
+```
+
+向div添加class
+
+```html
+<input type="text" ref="name">
+<button @click="handleClick">點擊我</button>
+```
+
+```js
+methods:{
+  handleClick(){
+    console.log(this.$refs.name)
+    this.$refs.name.classList.add('active')
+  }
+},
+```
 
 
 
