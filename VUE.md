@@ -128,24 +128,24 @@ if與show的差別是 if會將整個dom刪除 而show只是將style 改為不顯
 ```
 
 ```html
-	<div class="box" @mousemove="HandleMousemove">x.y位子{{x}}-{{y}}</div>
+<div class="box" @mousemove="HandleMousemove">x.y位子{{x}}-{{y}}</div>
 ```
 
 獲取e的x.y存到data
 
 ```js
-	data(){
-		return {
-			x:0,
-			y:0,
-		}
-	},
-	methods:{
-		HandleMousemove(e){
-			this.x = e.offsetX //data設定的x = e的offsetX
-			this.y = e.offsetY //data設定的y = e的offsetX
-		},
+data(){
+	return {
+		x:0,
+		y:0,
 	}
+},
+methods:{
+	HandleMousemove(e){
+		this.x = e.offsetX //data設定的x = e的offsetX
+		this.y = e.offsetY //data設定的y = e的offsetX
+	},
+}
 ```
 
 
