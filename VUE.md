@@ -23,10 +23,10 @@
 在<head>進行vue cdn的設置<script src="https://unpkg.com/vue@3"></script>
 ```
 
-	在資料夾底下添加app.js 並在index.html 
+	在資料夾底下添加app.js
 
 ```html
-<body>添加 <script src="app.js"></script>讓html可以偵測到app.js
+在index.html <body>添加 <script src="app.js"></script>讓html可以偵測到app.js
 ```
 
 ```
