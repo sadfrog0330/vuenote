@@ -371,7 +371,7 @@ Modal.vue
 
 ## VUE 第6集
 
-添加導入檔案
+### 添加與導入檔案
 
 ```html
 <檔案名稱 />
@@ -398,7 +398,7 @@ data(){
 },
 ```
 
-### mounted() 當組件觸發渲染時
+### mounted() 當組件安裝到dom時 觸發
 
 ```js
 mounted(){
@@ -416,7 +416,7 @@ setTimeout(() => {
     要觸發的動作  ex: this.function
   }, 倒數時間)
 ```
-updated() 當整個組件完成渲染時
+### updated() 當整個組件完成渲染時
 
 ```js
 updated(){
@@ -424,7 +424,7 @@ updated(){
 }
 ```
 
-unmounted() 當未完成渲染時
+### unmounted() 當未完成渲染時
 
 ```js
 unmounted(){
@@ -466,22 +466,43 @@ stopTimer(){
 子
 ```js
 function(){
-  this.$emit('html名稱', this.狀態名稱)
+  this.$emit('html名稱', this.子狀態名稱)
 }
 ```
 
 父
 ```html
-
+<子檔案名稱 @end="endGame"/>
 ```
 
 ```js
 
+endGame(父任意名稱){<- 父任意名稱的 值 = this.子狀態名稱
+  this.score = 父任意名稱
+},
+```
+### 父級返回給子級一個值
+
+子
+```html
+<p>回傳 {{ 子級變數 }} </p>
 ```
 
+```js
+props:['子級變數']
+```
 
-
-
+父
+```html
+<子級檔案名稱 :子級變數="父級變數"/>
+```
+```js
+data(){
+  return{
+    父級變數:null,
+  }
+},
+```
 
 
 
