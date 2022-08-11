@@ -383,6 +383,8 @@ components: { 檔案名稱 },
 ```
 
 true時禁用按鈕
+
+
 ```html
 <button @click="start" :disabled="isPlaying">play</button>
 ```
