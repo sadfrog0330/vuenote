@@ -299,9 +299,47 @@ components: { 資料夾名稱 },
 </style>
 ```
 
+判定 任意渲染名稱 是否要渲染
 
+App.vue父 Modle.vue子
 
+Modle.vue
+```html
+<div :class="{ css任意渲染名稱: theme === '變數' }">
+<div> theme 如果完全= '變數' 則輸出css樣式 任意渲染名稱 如果不等於 就不會輸出樣式</div>
+</div>
+```
 
+App.vue
+```html
+<Modal theme="變數" />
+```
+theme === 任意判定 所以會渲染 css任意渲染名稱
+
+子級調用父級方法
+
+Modal.vue
+```html
+<div class="modal" :class="{ sale: theme === 'sale' }">
+</div>
+```
+
+觸發父級close
+
+```js
+closeModal(){
+  this.$emit('close')
+}
+```
+
+App.vue
+```html
+<div v-if="showModal">
+  <Modal theme="sale" @close="toggleModal" />
+</div>
+```
+```js
+```
 
 
 
