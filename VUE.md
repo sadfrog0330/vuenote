@@ -369,6 +369,37 @@ Modal.vue
 </div>
 ```
 
+## VUE 第6集
+
+添加導入檔案
+```html
+<檔案名稱 />
+```
+
+```js
+import 檔案名稱 from './components/檔案名稱.vue' //此為檔案路徑
+
+components: { 檔案名稱 },
+```
+
+true時禁用按鈕
+```html
+<button @click="start" :disabled="isPlaying">play</button>
+```
+
+```js
+data(){
+  return{
+    isPlaying: true,
+  }
+},
+```
+
+
+
+
+
+
 
 
 
