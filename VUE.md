@@ -383,7 +383,7 @@ import 檔案名稱 from './components/檔案名稱.vue' //此為檔案路徑
 components: { 檔案名稱 },
 ```
 
-true時禁用按鈕
+###true時禁用按鈕
 
 
 ```html
@@ -432,7 +432,34 @@ unmounted(){
 },
 ```
 
+### 每X秒運行一次函式
 
+```js
+data(){
+    return{
+      showBlock:false,
+      timer:null,
+      reactionTime:0,
+    }
+  },
+```
+
+```js
+startTimer(){
+  this.timer = setInterval(() => {
+    this.reactionTime += 10
+  },10)
+},
+```
+
+清除運行
+
+```js
+stopTimer(){
+  clearInterval(this.timer)
+  console.log(this.reactionTime)
+},
+```
 
 
 
