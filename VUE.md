@@ -299,7 +299,7 @@ components: { 資料夾名稱 },
 </style>
 ```
 
-判定 任意渲染名稱 是否要渲染
+### 判定 任意渲染名稱 是否要渲染
 
 App.vue父 Modle.vue子
 
@@ -316,7 +316,7 @@ App.vue
 ```
 theme === 變數 所以會渲染 css任意渲染名稱
 
-### 子級調用父級function
+### 子級觸發父級function
 
 Modal.vue
 ```html
@@ -324,7 +324,7 @@ Modal.vue
 </div>
 ```
 
-觸發父級close
+子級回傳給父級觸發@close
 
 ```js
 closeModal(){
@@ -338,16 +338,16 @@ App.vue
   <Modal theme="sale" @close="toggleModal" />
 </div>
 ```
+@close觸發 toggleModal() function
 
 ```js
 toggleModal(){
   this.showModal = !this.showModal
 }
 ```
-
 引用父級樣式
 
-使用插槽將自訂模板傳遞
+### 使用插槽將自訂模板傳遞
 
 App.vue
 ```html
@@ -383,7 +383,7 @@ import 檔案名稱 from './components/檔案名稱.vue' //此為檔案路徑
 components: { 檔案名稱 },
 ```
 
-###true時禁用按鈕
+### true時禁用按鈕
 
 
 ```html
@@ -398,7 +398,7 @@ data(){
 },
 ```
 
-mounted() 當組件觸發渲染時
+### mounted() 當組件觸發渲染時
 
 ```js
 mounted(){
@@ -409,11 +409,11 @@ mounted(){
 }
 ```
 
-倒數計時
+### 倒數計時
 
 ```js
 setTimeout(() => {
-    要觸發的動作 this.function
+    要觸發的動作  ex: this.function
   }, 倒數時間)
 ```
 updated() 當整個組件完成渲染時
@@ -444,6 +444,7 @@ data(){
   },
 ```
 
+### 設定 timer = 每10秒運行 reactionTime +=10
 ```js
 startTimer(){
   this.timer = setInterval(() => {
@@ -452,16 +453,31 @@ startTimer(){
 },
 ```
 
-清除運行
+清除timer運行
 
 ```js
 stopTimer(){
   clearInterval(this.timer)
-  console.log(this.reactionTime)
 },
 ```
 
+### 子級返回給父級一個值
 
+子
+```js
+function(){
+  this.$emit('html名稱', this.狀態名稱)
+}
+```
+
+父
+```html
+
+```
+
+```js
+
+```
 
 
 
