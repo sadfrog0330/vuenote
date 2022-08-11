@@ -316,11 +316,11 @@ App.vue
 ```
 theme === 變數 所以會渲染 css任意渲染名稱
 
-### 子級調用父級方法
+### 子級調用父級function
 
 Modal.vue
 ```html
-<div class="modal" :class="{ css任意渲染名稱: theme === '變數' }">
+<div @click="closeModal">
 </div>
 ```
 
@@ -345,7 +345,29 @@ toggleModal(){
 }
 ```
 
+引用父級樣式
 
+使用插槽將自訂模板傳遞
+
+App.vue
+```html
+<Modal theme="sale" @close="toggleModal">
+  <template v-slot:links>
+    <a href="#">創建</a>
+    <a href="#">其他</a>
+  </template>
+  <h1>帳號創建</h1>
+  <p>註冊</p>
+</Modal>
+```
+
+Modal.vue
+```html
+<slot>123321</slot> 調用 <h1>帳號創建</h1> 與 <p>註冊</p>
+<div class="actions">
+  <slot name="links"></slot> 調用App.vue <template v-slot:links> 內的東西
+</div>
+```
 
 
 
