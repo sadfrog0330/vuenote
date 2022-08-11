@@ -372,6 +372,7 @@ Modal.vue
 ## VUE 第6集
 
 添加導入檔案
+
 ```html
 <檔案名稱 />
 ```
@@ -397,10 +398,39 @@ data(){
 },
 ```
 
+mounted() 當組件觸發渲染時
 
+```js
+mounted(){
+  setTimeout(() => {
+    this.showBlock = true
+    console.log(this.delay)
+  }, this.delay)
+}
+```
 
+倒數計時
 
+```js
+setTimeout(() => {
+    要觸發的動作 this.function
+  }, 倒數時間)
+```
+updated() 當整個組件完成渲染時
 
+```js
+updated(){
+  
+}
+```
+
+unmounted() 當未完成渲染時
+
+```js
+unmounted(){
+  console.log('unmounted')
+},
+```
 
 
 
