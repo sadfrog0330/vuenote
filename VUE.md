@@ -314,13 +314,13 @@ App.vue
 ```html
 <Modal theme="變數" />
 ```
-theme === 任意判定 所以會渲染 css任意渲染名稱
+theme === 變數 所以會渲染 css任意渲染名稱
 
-子級調用父級方法
+#### 子級調用父級方法
 
 Modal.vue
 ```html
-<div class="modal" :class="{ sale: theme === 'sale' }">
+<div class="modal" :class="{ css任意渲染名稱: theme === '變數' }">
 </div>
 ```
 
@@ -338,7 +338,11 @@ App.vue
   <Modal theme="sale" @close="toggleModal" />
 </div>
 ```
+
 ```js
+toggleModal(){
+  this.showModal = !this.showModal
+}
 ```
 
 
