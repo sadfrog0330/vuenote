@@ -503,7 +503,12 @@ data(){
   }
 },
 ```
+## css VUE 技巧
 
+### 直接v-bind在css內 
+```css
+  left: v-bind(calc());  calc內部放要輸入的數值
+```
 
 
 
