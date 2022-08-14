@@ -510,6 +510,13 @@ data(){
   left: v-bind(calc());  calc內部放要輸入的數值
 ```
 
+## vue 動畫技巧 
+
+### 讓狀態消失或進入時滑順的平移
+
+```
+讓狀態消失或進入時滑順的平移 :[https://youtu.be/DGI_aKld0Jg](https://youtu.be/DGI_aKld0Jg)
+```
 
 
 
