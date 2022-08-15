@@ -503,6 +503,18 @@ data(){
   }
 },
 ```
+## js VUE 技巧 
+
+根據內容物變化實時改變輸出
+```js
+//即時更新computed底下的東西 只要有變化 就會輸出
+computed:{
+  function(){
+    巴拉巴拉
+  }
+}
+```
+
 ## css VUE 技巧
 
 ### 直接v-bind在css內 
